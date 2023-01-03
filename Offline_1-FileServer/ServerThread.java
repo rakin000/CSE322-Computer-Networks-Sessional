@@ -6,6 +6,7 @@ import java.util.Date;
 public class ServerThread extends Thread{
     final int bufferSize =16*1024;
     Socket socket;
+    DataInputStream ind;
     BufferedReader in;
     DataOutputStream out;
 
@@ -46,26 +47,37 @@ public class ServerThread extends Thread{
 
         fis.close();
     }
-    private void receive_file(){
+    private void receive_file(String filename) throws IOException{
+        FileOutputStream fos=new FileOutputStream(filename);
+        byte[] buffer=new byte[bufferSize];
+        int count;
+        while((count=ind.read(buffer))>0){
+            fos.write(buffer,0,count);
+        }
+
+        fos.close();
+
     }
     public void run(){
         try{
-            in =new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            ind =new DataInputStream(socket.getInputStream());
+            in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out=new DataOutputStream(socket.getOutputStream()) ;
 
             System.out.println(socket.toString());
             String line=in.readLine();
             System.out.println(line);
+            String input[] = line.split(" ");
+            String rootPath = System.getProperty("user.dir");
 
             if( line != null && line.startsWith("GET") ){
                 StringBuffer content=new StringBuffer();
                 content.append("<div><h1>Hi, I am a Simple Java Server</h1></div>");
-                String input[]=line.split(" ");
                 String relPath=input[1].substring(1);
                 if( !relPath.isEmpty() ){
                     relPath = "/"+relPath;
                 }
-                File path=new File(System.getProperty("user.dir")+input[1]);
+                File path=new File(rootPath+input[1]);
 
                 if( !path.exists() ){
                     content.append("<h2>File Not found!!</h2>");
@@ -112,9 +124,14 @@ public class ServerThread extends Thread{
                 }
             }
             else if( line != null && line.startsWith("UPLOAD")){
-
+                String filename=input[1];
+                filename=rootPath+"/uploaded/"+filename;
+                System.out.println("File upload request");
+                System.out.println("Filename: "+filename);
+                receive_file(filename);
             }
-//            in.close();
+
+            in.close();
             out.close();
             socket.close();
         } catch (Exception e ){
