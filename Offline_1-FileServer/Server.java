@@ -14,13 +14,6 @@ public class Server {
 
         while(true){
             Socket socket = serverSocket.accept();
-
-//            BufferedReader in =new BufferedReader(new InputStreamReader(socket.getInputStream()));
-//            String input[] = in.readLine().split(" ");
-//            for(String s: input)
-//                System.out.println(s);
-//            System.out.println(in.readLine());
-//
             Thread service=new ServerThread(socket) ;
             service.start();
         }
