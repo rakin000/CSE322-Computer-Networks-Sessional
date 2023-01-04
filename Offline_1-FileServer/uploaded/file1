@@ -5,74 +5,45 @@ import java.util.Arrays;
 import java.util.Date;
 public class ServerThread extends Thread{
     final int bufferSize =16*1024;
-    StringBuffer log;
     Socket socket;
     DataInputStream ind;
     BufferedReader in;
     DataOutputStream out;
 
-    public ServerThread(Socket s){
-        this.socket=s;
-        log=new StringBuffer();
-    }
-    private void writeLog() throws Exception{
-        File file=new File("log.txt");
-        BufferedWriter fos=new BufferedWriter(new FileWriter("log.txt",true));
-//        FileOutputStream fos=new FileOutputStream(file);
-        fos.write(log.toString());
-        fos.flush();
-        fos.close();
-    }
+    public ServerThread(Socket s){ this.socket=s; }
     private void HTTPResponse(int status, String statusText, String mimeType, byte[] content ) throws IOException {
-        String logMessage;
-        log.append("HTTP Response: \r\n");
-        out.writeBytes(logMessage = "HTTP/1.1 "+status+" "+statusText+"\r\n" +
+        out.writeBytes("HTTP/1.1 "+status+" "+statusText+"\r\n" +
                     "Server: Java HTTP Server\r\n" +
                     "Date: "+new Date()+"\r\n" +
                     "Content-Type: "+mimeType+" \r\n" +
                     "Content-Length: " + content.length+"\r\n");
-        log.append(logMessage);
-        out.writeBytes(logMessage="\r\n");
-        log.append(logMessage);
+        out.writeBytes("\r\n");
         out.write(content,0,content.length) ;
-        log.append(new String(content)+"\r\n");
         out.flush();
-        log.append("\r\n");
     }
     private void HTTPupload(int status,String statusText, String mimeType, File file) throws IOException {
         FileInputStream fis=new FileInputStream(file);
         byte[] buffer=new byte[bufferSize];
         int count;
 
-        String logMessage;
-        log.append("HTTP Response: \r\n");
-        out.writeBytes(logMessage="HTTP/1.1 "+status+" "+statusText+"\r\n" +
+        out.writeBytes("HTTP/1.1 "+status+" "+statusText+"\r\n" +
                 "Server: Java HTTP Server\r\n" +
                 "Date: "+new Date()+"\r\n" +
                 "Content-Type: "+mimeType+"\r\n");
-        log.append(logMessage);
-        out.writeBytes(logMessage="Transfer-Encoding: chunked\r\n");
-        log.append(logMessage);
-        out.writeBytes(logMessage="Connection: Keep-Alive\r\n");
-        log.append(logMessage);
-        out.writeBytes(logMessage="\r\n");
-        log.append(logMessage) ;
-
+        out.writeBytes("Transfer-Encoding: chunked\r\n");
+        out.writeBytes("Connection: Keep-Alive\r\n");
+        out.writeBytes("\r\n");
         while((count=fis.read(buffer)) > 0){
-            out.writeBytes(logMessage=(Integer.toHexString(count)+"\r\n"));
-            log.append(logMessage);
+            out.writeBytes(Integer.toHexString(count)+"\r\n");
             out.write(buffer, 0, count);
-            log.append(new String(buffer));
-            out.writeBytes(logMessage="\r\n");
-            log.append(logMessage);
+//            out.write(new String(buffer));
+            out.writeBytes("\r\n");
+
 //            out.flush();
         }
-        out.writeBytes(logMessage="0\r\n");
-        log.append(logMessage);
-        out.writeBytes(logMessage="\r\n");
-        log.append(logMessage);
+        out.writeBytes("0\r\n");
+        out.writeBytes("\r\n");
         out.flush();
-        log.append("\r\n");
 
         fis.close();
     }
@@ -96,12 +67,8 @@ public class ServerThread extends Thread{
             out=new DataOutputStream(socket.getOutputStream()) ;
 
             System.out.println(socket.toString());
-            log.append(socket.toString()+"\r\n");
-            log.append("HTTP Request: \r\n");
             String line=in.readLine();
             System.out.println(line);
-            log.append(line+"\r\n\r\n");
-
             String input[] = line.split(" ");
             String rootPath = System.getProperty("user.dir");
 
@@ -115,8 +82,7 @@ public class ServerThread extends Thread{
                 File path=new File(rootPath+input[1]);
 
                 if( !path.exists() ){
-                    content.append("<h2>404: Page Not found!!</h2>");
-                    System.out.println("404: Page Not found\n");
+                    content.append("<h2>File Not found!!</h2>");
                     HTTPResponse(404,"NOT FOUND","text/html", String.valueOf(content).getBytes() );
                 }
                 else if(path.isDirectory()){
@@ -126,12 +92,7 @@ public class ServerThread extends Thread{
                             content.append("<a href=\""+relPath+"/"+f.getName()+"\"> <b><i>"+f.getName()+"</i></b></a><br>\n");
                         }
                         else {
-                            String temp=Files.probeContentType(f.toPath());
-                            if( temp!=null && (temp.startsWith("text") || temp.startsWith("image")) )
-                                temp=" target=\"_blank\" ";
-                            else temp="";
-
-                            content.append("<a href=\""+relPath+"/"+f.getName()+"\" "+temp+">"+f.getName()+"</a><br>\n");
+                            content.append("<a href=\""+relPath+"/"+f.getName()+"\">"+f.getName()+"</a><br>\n");
                         }
                     }
                     HTTPResponse(200,"OK","text/html",String.valueOf(content).getBytes());
@@ -175,9 +136,6 @@ public class ServerThread extends Thread{
             in.close();
             out.close();
             socket.close();
-
-            writeLog();
-
         } catch (Exception e ){
             e.printStackTrace();
         }

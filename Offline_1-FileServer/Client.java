@@ -1,5 +1,6 @@
 import java.io.*;
 import java.net.Socket;
+import java.nio.file.Files;
 import java.util.Scanner;
 
 public class Client {
@@ -17,6 +18,7 @@ public class Client {
 
                 try{
                     FileUploader fu=new FileUploader(socket, cmd[1]);
+                    fu.start();
                 } catch(Exception e){
                     e.printStackTrace();
                 }
@@ -30,14 +32,12 @@ public class Client {
 
 class FileUploader extends Thread{
     DataOutputStream out;
-    PrintWriter outp;
     File file;
     Socket socket;
     public FileUploader(Socket socket, String s) throws Exception{
         this.socket=socket;
         this.file=new File(s);
         out=new DataOutputStream(socket.getOutputStream());
-        outp=new PrintWriter(socket.getOutputStream());
     }
 
     public void run() {
@@ -45,13 +45,26 @@ class FileUploader extends Thread{
         byte[] bytes=new byte[Client.bufferSize];
         int count;
         try{
-            outp.write("UPLOAD file1\r\n");
-            FileInputStream fis=new FileInputStream(file);
+            String mimeType= Files.probeContentType(file.toPath());
 
-            while((count=fis.read(bytes))>0){
-                out.write(bytes,0,count);
+            if( !file.isFile() ){
+                System.out.println("Invalid file.");
+                out.writeBytes("Invalid file\r\n");
             }
-            fis.close();
+            else if( mimeType==null || !(mimeType.startsWith("image")||mimeType.startsWith("text")) ){
+                System.out.println("Invalid format.");
+                out.writeBytes("Invalid format\r\n");
+            }
+            else {
+                out.writeBytes("UPLOAD "+file.toPath().getFileName()+"\r\n");
+//                System.out.println("Written command");
+                FileInputStream fis=new FileInputStream(file);
+
+                while((count=fis.read(bytes))>0){
+                    out.write(bytes,0,count);
+                }
+                fis.close();
+            }
             out.close();
             socket.close();
         }
