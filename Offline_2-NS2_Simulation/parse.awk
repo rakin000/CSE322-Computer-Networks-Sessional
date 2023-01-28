@@ -9,7 +9,7 @@ BEGIN {
     end_time = 0;
 
     # constants
-    header_bytes = 20;
+    header_bytes = 8;
 }
 
 

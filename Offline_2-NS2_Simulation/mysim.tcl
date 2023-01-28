@@ -19,14 +19,22 @@ set val(rp)           DSR                     ;# ad-hoc routing protocol
 set val(side)         500                      ;# square area. area side    
 set val(nn)           40                       ;# number of mobilenodes
 set val(nf)           20                        ;# number of flows      
+set val(time)         50                        ; # time of simulation 
 
+for {set i 0} { $i+1 < $argc } { set i [expr $i+2] } {
+    if { [string equal [lindex $argv $i] "-nn"] } {
+        # puts "here" 
+        set val(nn) [lindex $argv [expr $i+1] ] 
+    } elseif {[lindex $argv $i] == "-nf"} {
+        set val(nf) [lindex $argv [expr $i+1] ]
+    } elseif {[lindex $argv $i] == "-side"} {
+        set val(side) [lindex $argv [expr $i+1] ]
+    } elseif {[lindex $argv $i] == "-qlen"} {
+        set val(ifqlen) [lindex $argv [expr $i+1] ]
+    }
 
-# for {set index 0} {$index < $argc} {incr index} {
-#     puts [lindex $argv $index]
-# }
-# if {$argc == 1} { 
-#     set val(nn)  [lindex $argv 0] 
-# }
+}
+
 
 
 # nam file
@@ -36,8 +44,6 @@ $ns namtrace-all-wireless $nam_file $val(side) $val(side)
 # topology: to keep track of node movements
 set topo [new Topography]
 $topo load_flatgrid $val(side) $val(side)
-
-
 
 set uniform_rnd_coord [new RandomVariable/Uniform]
 $uniform_rnd_coord set min_ 1
@@ -69,13 +75,15 @@ $ns node-config -adhocRouting $val(rp) \
 # create nodes
 for {set i 0} {$i < $val(nn) } {incr i} {
     set node($i) [$ns node]
-    $node($i) random-motion 0       ;# disable random motion
+    $node($i) random-motion 1  
 
     $node($i) set X_ [expr round([$uniform_rnd_coord value])] 
     $node($i) set Y_ [expr round([$uniform_rnd_coord value])] 
     $node($i) set Z_ 0
 
     $ns initial_node_pos $node($i) 20
+
+    # puts [expr $node($i) random-motion]
 } 
 
 # set src [expr round([$uniform_rnd_node value])]  
@@ -141,6 +149,20 @@ for {set i 0} { $i < $val(nf) } {incr i} {
 #     $ns at 0.5 "$cbr($i) start"  
 # }
 
+for {set t 1.0 } {$t < 50 } { set t [expr $t+5] } {
+    for {set i 0} {$i < $val(nn) } {incr i} {
+        # set nX_ [expr int(rand()*1000)%$val(side) ]
+        # set nY_ [expr int(rand()*1000)%$val(side) ]
+        # while { $nX_ == [$node($i) X_] && $nY_ == [$node($i) Y_]} {
+        #     set nX_ [expr int(rand()*1000)%$val(side) ]
+        #     set nY_ [expr int(rand()*1000)%$val(side) ]
+        # }
+        $ns at $t "$node($i) setdest [expr int(rand()*1000)%$val(side) ] [expr int(rand()*1000)%$val(side) ] 200.0" 
+    }
+}
+
+
+
 for {set i 0} {$i < $val(nn)} {incr i} {
     $ns at 50.0 "$node($i) reset"
 }
@@ -151,6 +173,8 @@ proc finish {} {
     $ns flush-trace
     close $trace_file
     close $nam_file
+    exec nam mysim_anim.nam & 
+    exec awk -f parse.awk mysim_trace.tr & 
 }
 
 proc halt_simulation {} {
