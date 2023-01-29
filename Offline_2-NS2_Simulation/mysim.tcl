@@ -20,6 +20,9 @@ set val(side)         500                      ;# square area. area side
 set val(nn)           40                       ;# number of mobilenodes
 set val(nf)           20                        ;# number of flows      
 set val(time)         50                        ; # time of simulation 
+set val(execnam)      0                         ;# execute nam after done
+set val(execawk)      0                         ;# execute awk after done 
+
 
 for {set i 0} { $i+1 < $argc } { set i [expr $i+2] } {
     if { [string equal [lindex $argv $i] "-nn"] } {
@@ -31,11 +34,14 @@ for {set i 0} { $i+1 < $argc } { set i [expr $i+2] } {
         set val(side) [lindex $argv [expr $i+1] ]
     } elseif {[lindex $argv $i] == "-qlen"} {
         set val(ifqlen) [lindex $argv [expr $i+1] ]
+    } elseif {[lindex $argv $i] == "-execnam" } {
+        set val(execnam) [lindex $argv [expr $i+1] ]
+    } elseif {[lindex $argv $i] == "-execawk" } {
+        set val(execawk) [lindex $argv [expr $i+1] ]
     }
 
+
 }
-
-
 
 # nam file
 set nam_file [open mysim_anim.nam w]
@@ -47,7 +53,7 @@ $topo load_flatgrid $val(side) $val(side)
 
 set uniform_rnd_coord [new RandomVariable/Uniform]
 $uniform_rnd_coord set min_ 1
-$uniform_rnd_coord set max_ $val(side) 
+$uniform_rnd_coord set max_ [expr $val(side)-1] 
 
 set uniform_rnd_node [new RandomVariable/Uniform]
 $uniform_rnd_node set min_ 0 
@@ -55,7 +61,6 @@ $uniform_rnd_node set max_ [expr $val(nn)-1]
 
 # general operation director for mobilenodes
 create-god $val(nn)
-
 
 $ns node-config -adhocRouting $val(rp) \
                 -llType $val(ll) \
@@ -82,21 +87,11 @@ for {set i 0} {$i < $val(nn) } {incr i} {
     $node($i) set Z_ 0
 
     $ns initial_node_pos $node($i) 20
-
-    # puts [expr $node($i) random-motion]
 } 
 
 # set src [expr round([$uniform_rnd_node value])]  
 set src [expr int(1000 * rand()) % $val(nn)]
 puts "source = $src" 
-
-# set udp [new Agent/UDP]
-# set udp_sink [new Agent/Null]
-# $ns attach-agent $node($src) $udp
-
-# array set cbr {}
-# array set udp {} 
-# array set udp_sink {} 
 
 array set taken {} 
 for {set index 0} {$index < $val(nn)} {incr index} {
@@ -110,21 +105,9 @@ for {set i 0} { $i < $val(nf) } {incr i} {
     while { $taken($dest) == 1 } {
         set dest [expr round([$uniform_rnd_node value])]
     }
-    set taken($dest) 1 
+    # set taken($dest) 1 
     puts "dest($i) = $dest"
     
-    # global cbr udp udp_sink 
-
-    # set udp($i) [new Agent/UDP]
-    # $ns attach-agent $node($src) $udp($i) 
-    # set udp_sink($i) [new Agent/Null]
-    # $ns attach-agent $node($dest) $udp_sink($i)
-    # $ns connect $udp($i) $udp_sink($i)
-    # $udp($i) set fid_   [expr $i+1] 
-
-    # set cbr($i) [new Application/Traffic/CBR]
-    # $cbr($i) attach-agent $udp($i)
-
     set udp [new Agent/UDP]
     set udp_sink [new Agent/Null]
     $ns attach-agent $node($src) $udp 
@@ -135,21 +118,16 @@ for {set i 0} { $i < $val(nf) } {incr i} {
     set cbr [new Application/Traffic/CBR]
     $cbr attach-agent $udp
     
-    # $cbr set type_ CBR
-    # $cbr set packet_size_ 10
-    # $cbr set rate_ 0.4mb
+    $cbr set type_ CBR
+    $cbr set packet_size_ 1024
+    $cbr set rate_ 32kb 
     # $cbr set random_ false
 
     $ns at 0.5 "$cbr start"  
 # $ns at [expr int(9 * rand()) + 1] "$cbr start"
 }
 
-#  for {set i 0} {$i < $val(nf)} {incr i} {
-#     global cbr
-#     $ns at 0.5 "$cbr($i) start"  
-# }
-
-for {set t 1.0 } {$t < 50 } { set t [expr $t+5] } {
+for {set t 1.0 } {$t < $val(time) } { set t [expr $t+5] } {
     for {set i 0} {$i < $val(nn) } {incr i} {
         # set nX_ [expr int(rand()*1000)%$val(side) ]
         # set nY_ [expr int(rand()*1000)%$val(side) ]
@@ -157,7 +135,9 @@ for {set t 1.0 } {$t < 50 } { set t [expr $t+5] } {
         #     set nX_ [expr int(rand()*1000)%$val(side) ]
         #     set nY_ [expr int(rand()*1000)%$val(side) ]
         # }
-        $ns at $t "$node($i) setdest [expr int(rand()*1000)%$val(side) ] [expr int(rand()*1000)%$val(side) ] 200.0" 
+        # $ns at $t "$node($i) setdest  [expr int(rand()*1000)%$val(side) ] 200.0" 
+
+        $ns at $t "$node($i) setdest [expr round([$uniform_rnd_coord value])] [expr round([$uniform_rnd_coord value])] [expr int(rand()*1500)%5+1]" 
     }
 }
 
@@ -169,12 +149,16 @@ for {set i 0} {$i < $val(nn)} {incr i} {
 
 # call final function
 proc finish {} {
-    global ns trace_file nam_file
+    global ns trace_file nam_file val
     $ns flush-trace
     close $trace_file
     close $nam_file
-    exec nam mysim_anim.nam & 
-    exec awk -f parse.awk mysim_trace.tr & 
+    if { $val(execnam) == 1 } {
+        exec nam mysim_anim.nam & 
+    }
+    if { $val(execawk) == 1 } {
+        exec awk -f parse.awk mysim_trace.tr & 
+    }
 }
 
 proc halt_simulation {} {
@@ -185,9 +169,6 @@ proc halt_simulation {} {
 
 $ns at 50.0001 "finish"
 $ns at 50.0002 "halt_simulation"
-
-
-
 
 # Run simulation
 puts "Simulation starting"

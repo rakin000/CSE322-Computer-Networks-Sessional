@@ -56,15 +56,18 @@ BEGIN {
 END {
     end_time = time_sec;
     simulation_time = end_time - start_time;
+    throughput = (received_bytes*8)/simulation_time; 
+    average_delay = (total_delay/received_packets);
+    delivery_ratio = (received_packets/sent_packets);
+    drop_ratio = (dropped_packets/sent_packets);
+    print "Sent Packets,Dropped Packets,Received Packets,Throughput,Average Delay,Delivery Ratio,Drop Ratio";
+    print  sent_packets, ",", dropped_packets, ",", received_packets, ",", throughput, ",", average_delay, ",", delivery_ratio, ",", drop_ratio ; 
+   # print "Sent Packets: ", sent_packets;
+   # print "Dropped Packets: ", dropped_packets;
+   # print "Received Packets: ", received_packets;
 
-
-    print "Sent Packets: ", sent_packets;
-    print "Dropped Packets: ", dropped_packets;
-    print "Received Packets: ", received_packets;
-
-    print "-------------------------------------------------------------";
-    print "Throughput: ", (received_bytes * 8) / simulation_time, "bits/sec";
-    print "Average Delay: ", (total_delay / received_packets), "seconds";
-    print "Delivery ratio: ", (received_packets / sent_packets);
-    print "Drop ratio: ", (dropped_packets / sent_packets);
+   # print "Throughput: ", (received_bytes * 8) / simulation_time, "bits/sec";
+   #/ print "Average Delay: ", (total_delay / received_packets), "seconds";
+   #/ print "Delivery ratio: ", (received_packets / sent_packets);
+   #/ print "Drop ratio: ", (dropped_packets / sent_packets);
 }
