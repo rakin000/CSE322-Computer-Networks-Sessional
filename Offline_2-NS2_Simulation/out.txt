@@ -1,0 +1,1426 @@
+num_nodes is set 40
+In DSRAgent::command(), net_id: 3: cmd addr 0 
+In DSRAgent::command(), net_id: 3: cmd node _o16 
+node created, node id: 0
+In DSRAgent::command(), net_id: 3: cmd target _o19 
+node id: 0 
+node X: 44397072 
+node Y: 44259666
+In DSRAgent::command(), net_id: 3: cmd mac-addr 0 
+node id: 0 
+node X: 44397072 
+node Y: 44259764
+In DSRAgent::command(), net_id: 4: cmd add-ll _o30 _o24 
+node id: 0 
+node X: 44397072 
+node Y: 44259868
+In DSRAgent::command(), net_id: 3: cmd install-tap _o23 
+node id: 0 
+node X: 44397072 
+node Y: 44259972
+In DSRAgent::command(), net_id: 3: cmd drop-target _o32 
+node id: 0 
+node X: 44397072 
+node Y: 44260076
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o33 
+node id: 0 
+node X: 44397072 
+node Y: 44260180
+In DSRAgent::command(), net_id: 3: cmd addr 1 
+In DSRAgent::command(), net_id: 3: cmd node _o34 
+node created, node id: 1
+In DSRAgent::command(), net_id: 3: cmd target _o37 
+node id: 1 
+node X: 46688544 
+node Y: 44260401
+In DSRAgent::command(), net_id: 3: cmd mac-addr 1 
+node id: 1 
+node X: 46688544 
+node Y: 44260499
+In DSRAgent::command(), net_id: 4: cmd add-ll _o48 _o42 
+node id: 1 
+node X: 46688544 
+node Y: 44260603
+In DSRAgent::command(), net_id: 3: cmd install-tap _o41 
+node id: 1 
+node X: 46688544 
+node Y: 44260707
+In DSRAgent::command(), net_id: 3: cmd drop-target _o50 
+node id: 1 
+node X: 46688544 
+node Y: 44260811
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o51 
+node id: 1 
+node X: 46688544 
+node Y: 44260915
+In DSRAgent::command(), net_id: 3: cmd addr 2 
+In DSRAgent::command(), net_id: 3: cmd node _o52 
+node created, node id: 2
+In DSRAgent::command(), net_id: 3: cmd target _o55 
+node id: 2 
+node X: 46778720 
+node Y: 44261136
+In DSRAgent::command(), net_id: 3: cmd mac-addr 2 
+node id: 2 
+node X: 46778720 
+node Y: 44261234
+In DSRAgent::command(), net_id: 4: cmd add-ll _o66 _o60 
+node id: 2 
+node X: 46778720 
+node Y: 44261338
+In DSRAgent::command(), net_id: 3: cmd install-tap _o59 
+node id: 2 
+node X: 46778720 
+node Y: 44261442
+In DSRAgent::command(), net_id: 3: cmd drop-target _o68 
+node id: 2 
+node X: 46778720 
+node Y: 44261546
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o69 
+node id: 2 
+node X: 46778720 
+node Y: 44261650
+In DSRAgent::command(), net_id: 3: cmd addr 3 
+In DSRAgent::command(), net_id: 3: cmd node _o70 
+node created, node id: 3
+In DSRAgent::command(), net_id: 3: cmd target _o73 
+node id: 3 
+node X: 48999536 
+node Y: 44261871
+In DSRAgent::command(), net_id: 3: cmd mac-addr 3 
+node id: 3 
+node X: 48999536 
+node Y: 44261969
+In DSRAgent::command(), net_id: 4: cmd add-ll _o84 _o78 
+node id: 3 
+node X: 48999536 
+node Y: 44262073
+In DSRAgent::command(), net_id: 3: cmd install-tap _o77 
+node id: 3 
+node X: 48999536 
+node Y: 44262177
+In DSRAgent::command(), net_id: 3: cmd drop-target _o86 
+node id: 3 
+node X: 48999536 
+node Y: 44262281
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o87 
+node id: 3 
+node X: 48999536 
+node Y: 44262385
+In DSRAgent::command(), net_id: 3: cmd addr 4 
+In DSRAgent::command(), net_id: 3: cmd node _o88 
+node created, node id: 4
+In DSRAgent::command(), net_id: 3: cmd target _o91 
+node id: 4 
+node X: 51212528 
+node Y: 44262606
+In DSRAgent::command(), net_id: 3: cmd mac-addr 4 
+node id: 4 
+node X: 51212528 
+node Y: 44262704
+In DSRAgent::command(), net_id: 4: cmd add-ll _o102 _o96 
+node id: 4 
+node X: 51212528 
+node Y: 44262809
+In DSRAgent::command(), net_id: 3: cmd install-tap _o95 
+node id: 4 
+node X: 51212528 
+node Y: 44262913
+In DSRAgent::command(), net_id: 3: cmd drop-target _o104 
+node id: 4 
+node X: 51212528 
+node Y: 44263018
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o105 
+node id: 4 
+node X: 51212528 
+node Y: 44263123
+In DSRAgent::command(), net_id: 3: cmd addr 5 
+In DSRAgent::command(), net_id: 3: cmd node _o106 
+node created, node id: 5
+In DSRAgent::command(), net_id: 3: cmd target _o109 
+node id: 5 
+node X: 53430080 
+node Y: 44263346
+In DSRAgent::command(), net_id: 3: cmd mac-addr 5 
+node id: 5 
+node X: 53430080 
+node Y: 44263444
+In DSRAgent::command(), net_id: 4: cmd add-ll _o120 _o114 
+node id: 5 
+node X: 53430080 
+node Y: 44263550
+In DSRAgent::command(), net_id: 3: cmd install-tap _o113 
+node id: 5 
+node X: 53430080 
+node Y: 44259559
+In DSRAgent::command(), net_id: 3: cmd drop-target _o122 
+node id: 5 
+node X: 53430080 
+node Y: 44259664
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o123 
+node id: 5 
+node X: 53430080 
+node Y: 44259769
+In DSRAgent::command(), net_id: 3: cmd addr 6 
+In DSRAgent::command(), net_id: 3: cmd node _o124 
+node created, node id: 6
+In DSRAgent::command(), net_id: 3: cmd target _o127 
+node id: 6 
+node X: 55643776 
+node Y: 44259992
+In DSRAgent::command(), net_id: 3: cmd mac-addr 6 
+node id: 6 
+node X: 55643776 
+node Y: 44260090
+In DSRAgent::command(), net_id: 4: cmd add-ll _o138 _o132 
+node id: 6 
+node X: 55643776 
+node Y: 44260196
+In DSRAgent::command(), net_id: 3: cmd install-tap _o131 
+node id: 6 
+node X: 55643776 
+node Y: 44260301
+In DSRAgent::command(), net_id: 3: cmd drop-target _o140 
+node id: 6 
+node X: 55643776 
+node Y: 44260406
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o141 
+node id: 6 
+node X: 55643776 
+node Y: 44260511
+In DSRAgent::command(), net_id: 3: cmd addr 7 
+In DSRAgent::command(), net_id: 3: cmd node _o142 
+node created, node id: 7
+In DSRAgent::command(), net_id: 3: cmd target _o145 
+node id: 7 
+node X: 57863040 
+node Y: 44260734
+In DSRAgent::command(), net_id: 3: cmd mac-addr 7 
+node id: 7 
+node X: 57863040 
+node Y: 44260832
+In DSRAgent::command(), net_id: 4: cmd add-ll _o156 _o150 
+node id: 7 
+node X: 57863040 
+node Y: 44260938
+In DSRAgent::command(), net_id: 3: cmd install-tap _o149 
+node id: 7 
+node X: 57863040 
+node Y: 44261043
+In DSRAgent::command(), net_id: 3: cmd drop-target _o158 
+node id: 7 
+node X: 57863040 
+node Y: 44261148
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o159 
+node id: 7 
+node X: 57863040 
+node Y: 44261253
+In DSRAgent::command(), net_id: 3: cmd addr 8 
+In DSRAgent::command(), net_id: 3: cmd node _o160 
+node created, node id: 8
+In DSRAgent::command(), net_id: 3: cmd target _o163 
+node id: 8 
+node X: 60077552 
+node Y: 44261476
+In DSRAgent::command(), net_id: 3: cmd mac-addr 8 
+node id: 8 
+node X: 60077552 
+node Y: 44261574
+In DSRAgent::command(), net_id: 4: cmd add-ll _o174 _o168 
+node id: 8 
+node X: 60077552 
+node Y: 44261680
+In DSRAgent::command(), net_id: 3: cmd install-tap _o167 
+node id: 8 
+node X: 60077552 
+node Y: 44261785
+In DSRAgent::command(), net_id: 3: cmd drop-target _o176 
+node id: 8 
+node X: 60077552 
+node Y: 44261890
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o177 
+node id: 8 
+node X: 60077552 
+node Y: 44261995
+In DSRAgent::command(), net_id: 3: cmd addr 9 
+In DSRAgent::command(), net_id: 3: cmd node _o178 
+node created, node id: 9
+In DSRAgent::command(), net_id: 3: cmd target _o181 
+node id: 9 
+node X: 62296720 
+node Y: 44262218
+In DSRAgent::command(), net_id: 3: cmd mac-addr 9 
+node id: 9 
+node X: 62296720 
+node Y: 44262316
+In DSRAgent::command(), net_id: 4: cmd add-ll _o192 _o186 
+node id: 9 
+node X: 62296720 
+node Y: 44262422
+In DSRAgent::command(), net_id: 3: cmd install-tap _o185 
+node id: 9 
+node X: 62296720 
+node Y: 44262527
+In DSRAgent::command(), net_id: 3: cmd drop-target _o194 
+node id: 9 
+node X: 62296720 
+node Y: 44262632
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o195 
+node id: 9 
+node X: 62296720 
+node Y: 44262737
+In DSRAgent::command(), net_id: 3: cmd addr 10 
+In DSRAgent::command(), net_id: 3: cmd node _o196 
+node created, node id: 10
+In DSRAgent::command(), net_id: 3: cmd target _o199 
+node id: 10 
+node X: 64517232 
+node Y: 44262962
+In DSRAgent::command(), net_id: 3: cmd mac-addr 10 
+node id: 10 
+node X: 64517232 
+node Y: 44263062
+In DSRAgent::command(), net_id: 4: cmd add-ll _o210 _o204 
+node id: 10 
+node X: 64517232 
+node Y: 44263169
+In DSRAgent::command(), net_id: 3: cmd install-tap _o203 
+node id: 10 
+node X: 64517232 
+node Y: 44263275
+In DSRAgent::command(), net_id: 3: cmd drop-target _o212 
+node id: 10 
+node X: 64517232 
+node Y: 44263381
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o213 
+node id: 10 
+node X: 64517232 
+node Y: 44263487
+In DSRAgent::command(), net_id: 3: cmd addr 11 
+In DSRAgent::command(), net_id: 3: cmd node _o214 
+node created, node id: 11
+In DSRAgent::command(), net_id: 3: cmd target _o217 
+node id: 11 
+node X: 66738912 
+node Y: 44259617
+In DSRAgent::command(), net_id: 3: cmd mac-addr 11 
+node id: 11 
+node X: 66738912 
+node Y: 44259717
+In DSRAgent::command(), net_id: 4: cmd add-ll _o228 _o222 
+node id: 11 
+node X: 66738912 
+node Y: 44259824
+In DSRAgent::command(), net_id: 3: cmd install-tap _o221 
+node id: 11 
+node X: 66738912 
+node Y: 44259930
+In DSRAgent::command(), net_id: 3: cmd drop-target _o230 
+node id: 11 
+node X: 66738912 
+node Y: 44260036
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o231 
+node id: 11 
+node X: 66738912 
+node Y: 44260142
+In DSRAgent::command(), net_id: 3: cmd addr 12 
+In DSRAgent::command(), net_id: 3: cmd node _o232 
+node created, node id: 12
+In DSRAgent::command(), net_id: 3: cmd target _o235 
+node id: 12 
+node X: 68952816 
+node Y: 44260368
+In DSRAgent::command(), net_id: 3: cmd mac-addr 12 
+node id: 12 
+node X: 68952816 
+node Y: 44260468
+In DSRAgent::command(), net_id: 4: cmd add-ll _o246 _o240 
+node id: 12 
+node X: 68952816 
+node Y: 44260575
+In DSRAgent::command(), net_id: 3: cmd install-tap _o239 
+node id: 12 
+node X: 68952816 
+node Y: 44260681
+In DSRAgent::command(), net_id: 3: cmd drop-target _o248 
+node id: 12 
+node X: 68952816 
+node Y: 44260787
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o249 
+node id: 12 
+node X: 68952816 
+node Y: 44260893
+In DSRAgent::command(), net_id: 3: cmd addr 13 
+In DSRAgent::command(), net_id: 3: cmd node _o250 
+node created, node id: 13
+In DSRAgent::command(), net_id: 3: cmd target _o253 
+node id: 13 
+node X: 71169328 
+node Y: 44261119
+In DSRAgent::command(), net_id: 3: cmd mac-addr 13 
+node id: 13 
+node X: 71169328 
+node Y: 44261219
+In DSRAgent::command(), net_id: 4: cmd add-ll _o264 _o258 
+node id: 13 
+node X: 71169328 
+node Y: 44261326
+In DSRAgent::command(), net_id: 3: cmd install-tap _o257 
+node id: 13 
+node X: 71169328 
+node Y: 44261432
+In DSRAgent::command(), net_id: 3: cmd drop-target _o266 
+node id: 13 
+node X: 71169328 
+node Y: 44261538
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o267 
+node id: 13 
+node X: 71169328 
+node Y: 44261644
+In DSRAgent::command(), net_id: 3: cmd addr 14 
+In DSRAgent::command(), net_id: 3: cmd node _o268 
+node created, node id: 14
+In DSRAgent::command(), net_id: 3: cmd target _o271 
+node id: 14 
+node X: 73388560 
+node Y: 44261870
+In DSRAgent::command(), net_id: 3: cmd mac-addr 14 
+node id: 14 
+node X: 73388560 
+node Y: 44261970
+In DSRAgent::command(), net_id: 4: cmd add-ll _o282 _o276 
+node id: 14 
+node X: 73388560 
+node Y: 44262077
+In DSRAgent::command(), net_id: 3: cmd install-tap _o275 
+node id: 14 
+node X: 73388560 
+node Y: 44262183
+In DSRAgent::command(), net_id: 3: cmd drop-target _o284 
+node id: 14 
+node X: 73388560 
+node Y: 44262289
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o285 
+node id: 14 
+node X: 73388560 
+node Y: 44262395
+In DSRAgent::command(), net_id: 3: cmd addr 15 
+In DSRAgent::command(), net_id: 3: cmd node _o286 
+node created, node id: 15
+In DSRAgent::command(), net_id: 3: cmd target _o289 
+node id: 15 
+node X: 75603456 
+node Y: 44262621
+In DSRAgent::command(), net_id: 3: cmd mac-addr 15 
+node id: 15 
+node X: 75603456 
+node Y: 44262721
+In DSRAgent::command(), net_id: 4: cmd add-ll _o300 _o294 
+node id: 15 
+node X: 75603456 
+node Y: 44262828
+In DSRAgent::command(), net_id: 3: cmd install-tap _o293 
+node id: 15 
+node X: 75603456 
+node Y: 44262934
+In DSRAgent::command(), net_id: 3: cmd drop-target _o302 
+node id: 15 
+node X: 75603456 
+node Y: 44263040
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o303 
+node id: 15 
+node X: 75603456 
+node Y: 44263146
+In DSRAgent::command(), net_id: 3: cmd addr 16 
+In DSRAgent::command(), net_id: 3: cmd node _o304 
+node created, node id: 16
+In DSRAgent::command(), net_id: 3: cmd target _o307 
+node id: 16 
+node X: 77822448 
+node Y: 44263372
+In DSRAgent::command(), net_id: 3: cmd mac-addr 16 
+node id: 16 
+node X: 77822448 
+node Y: 44263472
+In DSRAgent::command(), net_id: 4: cmd add-ll _o318 _o312 
+node id: 16 
+node X: 77822448 
+node Y: 44259483
+In DSRAgent::command(), net_id: 3: cmd install-tap _o311 
+node id: 16 
+node X: 77822448 
+node Y: 44259589
+In DSRAgent::command(), net_id: 3: cmd drop-target _o320 
+node id: 16 
+node X: 77822448 
+node Y: 44259695
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o321 
+node id: 16 
+node X: 77822448 
+node Y: 44259801
+In DSRAgent::command(), net_id: 3: cmd addr 17 
+In DSRAgent::command(), net_id: 3: cmd node _o322 
+node created, node id: 17
+In DSRAgent::command(), net_id: 3: cmd target _o325 
+node id: 17 
+node X: 80037776 
+node Y: 44260027
+In DSRAgent::command(), net_id: 3: cmd mac-addr 17 
+node id: 17 
+node X: 80037776 
+node Y: 44260127
+In DSRAgent::command(), net_id: 4: cmd add-ll _o336 _o330 
+node id: 17 
+node X: 80037776 
+node Y: 44260234
+In DSRAgent::command(), net_id: 3: cmd install-tap _o329 
+node id: 17 
+node X: 80037776 
+node Y: 44260340
+In DSRAgent::command(), net_id: 3: cmd drop-target _o338 
+node id: 17 
+node X: 80037776 
+node Y: 44260446
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o339 
+node id: 17 
+node X: 80037776 
+node Y: 44260552
+In DSRAgent::command(), net_id: 3: cmd addr 18 
+In DSRAgent::command(), net_id: 3: cmd node _o340 
+node created, node id: 18
+In DSRAgent::command(), net_id: 3: cmd target _o343 
+node id: 18 
+node X: 82256864 
+node Y: 44260778
+In DSRAgent::command(), net_id: 3: cmd mac-addr 18 
+node id: 18 
+node X: 82256864 
+node Y: 44260878
+In DSRAgent::command(), net_id: 4: cmd add-ll _o354 _o348 
+node id: 18 
+node X: 82256864 
+node Y: 44260985
+In DSRAgent::command(), net_id: 3: cmd install-tap _o347 
+node id: 18 
+node X: 82256864 
+node Y: 44261091
+In DSRAgent::command(), net_id: 3: cmd drop-target _o356 
+node id: 18 
+node X: 82256864 
+node Y: 44261197
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o357 
+node id: 18 
+node X: 82256864 
+node Y: 44261303
+In DSRAgent::command(), net_id: 3: cmd addr 19 
+In DSRAgent::command(), net_id: 3: cmd node _o358 
+node created, node id: 19
+In DSRAgent::command(), net_id: 3: cmd target _o361 
+node id: 19 
+node X: 84471376 
+node Y: 44261529
+In DSRAgent::command(), net_id: 3: cmd mac-addr 19 
+node id: 19 
+node X: 84471376 
+node Y: 44261629
+In DSRAgent::command(), net_id: 4: cmd add-ll _o372 _o366 
+node id: 19 
+node X: 84471376 
+node Y: 44261736
+In DSRAgent::command(), net_id: 3: cmd install-tap _o365 
+node id: 19 
+node X: 84471376 
+node Y: 44261842
+In DSRAgent::command(), net_id: 3: cmd drop-target _o374 
+node id: 19 
+node X: 84471376 
+node Y: 44261948
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o375 
+node id: 19 
+node X: 84471376 
+node Y: 44262054
+In DSRAgent::command(), net_id: 3: cmd addr 20 
+In DSRAgent::command(), net_id: 3: cmd node _o376 
+node created, node id: 20
+In DSRAgent::command(), net_id: 3: cmd target _o379 
+node id: 20 
+node X: 86690880 
+node Y: 44262280
+In DSRAgent::command(), net_id: 3: cmd mac-addr 20 
+node id: 20 
+node X: 86690880 
+node Y: 44262380
+In DSRAgent::command(), net_id: 4: cmd add-ll _o390 _o384 
+node id: 20 
+node X: 86690880 
+node Y: 44262487
+In DSRAgent::command(), net_id: 3: cmd install-tap _o383 
+node id: 20 
+node X: 86690880 
+node Y: 44262593
+In DSRAgent::command(), net_id: 3: cmd drop-target _o392 
+node id: 20 
+node X: 86690880 
+node Y: 44262699
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o393 
+node id: 20 
+node X: 86690880 
+node Y: 44262805
+In DSRAgent::command(), net_id: 3: cmd addr 21 
+In DSRAgent::command(), net_id: 3: cmd node _o394 
+node created, node id: 21
+In DSRAgent::command(), net_id: 3: cmd target _o397 
+node id: 21 
+node X: 88905360 
+node Y: 44263031
+In DSRAgent::command(), net_id: 3: cmd mac-addr 21 
+node id: 21 
+node X: 88905360 
+node Y: 44263131
+In DSRAgent::command(), net_id: 4: cmd add-ll _o408 _o402 
+node id: 21 
+node X: 88905360 
+node Y: 44263238
+In DSRAgent::command(), net_id: 3: cmd install-tap _o401 
+node id: 21 
+node X: 88905360 
+node Y: 44263344
+In DSRAgent::command(), net_id: 3: cmd drop-target _o410 
+node id: 21 
+node X: 88905360 
+node Y: 44263450
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o411 
+node id: 21 
+node X: 88905360 
+node Y: 44263556
+In DSRAgent::command(), net_id: 3: cmd addr 22 
+In DSRAgent::command(), net_id: 3: cmd node _o412 
+node created, node id: 22
+In DSRAgent::command(), net_id: 3: cmd target _o415 
+node id: 22 
+node X: 91124480 
+node Y: 44259686
+In DSRAgent::command(), net_id: 3: cmd mac-addr 22 
+node id: 22 
+node X: 91124480 
+node Y: 44259786
+In DSRAgent::command(), net_id: 4: cmd add-ll _o426 _o420 
+node id: 22 
+node X: 91124480 
+node Y: 44259893
+In DSRAgent::command(), net_id: 3: cmd install-tap _o419 
+node id: 22 
+node X: 91124480 
+node Y: 44259999
+In DSRAgent::command(), net_id: 3: cmd drop-target _o428 
+node id: 22 
+node X: 91124480 
+node Y: 44260105
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o429 
+node id: 22 
+node X: 91124480 
+node Y: 44260211
+In DSRAgent::command(), net_id: 3: cmd addr 23 
+In DSRAgent::command(), net_id: 3: cmd node _o430 
+node created, node id: 23
+In DSRAgent::command(), net_id: 3: cmd target _o433 
+node id: 23 
+node X: 93339216 
+node Y: 44260437
+In DSRAgent::command(), net_id: 3: cmd mac-addr 23 
+node id: 23 
+node X: 93339216 
+node Y: 44260537
+In DSRAgent::command(), net_id: 4: cmd add-ll _o444 _o438 
+node id: 23 
+node X: 93339216 
+node Y: 44260644
+In DSRAgent::command(), net_id: 3: cmd install-tap _o437 
+node id: 23 
+node X: 93339216 
+node Y: 44260750
+In DSRAgent::command(), net_id: 3: cmd drop-target _o446 
+node id: 23 
+node X: 93339216 
+node Y: 44260856
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o447 
+node id: 23 
+node X: 93339216 
+node Y: 44260962
+In DSRAgent::command(), net_id: 3: cmd addr 24 
+In DSRAgent::command(), net_id: 3: cmd node _o448 
+node created, node id: 24
+In DSRAgent::command(), net_id: 3: cmd target _o451 
+node id: 24 
+node X: 95553728 
+node Y: 44261188
+In DSRAgent::command(), net_id: 3: cmd mac-addr 24 
+node id: 24 
+node X: 95553728 
+node Y: 44261288
+In DSRAgent::command(), net_id: 4: cmd add-ll _o462 _o456 
+node id: 24 
+node X: 95553728 
+node Y: 44261395
+In DSRAgent::command(), net_id: 3: cmd install-tap _o455 
+node id: 24 
+node X: 95553728 
+node Y: 44261501
+In DSRAgent::command(), net_id: 3: cmd drop-target _o464 
+node id: 24 
+node X: 95553728 
+node Y: 44261607
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o465 
+node id: 24 
+node X: 95553728 
+node Y: 44261713
+In DSRAgent::command(), net_id: 3: cmd addr 25 
+In DSRAgent::command(), net_id: 3: cmd node _o466 
+node created, node id: 25
+In DSRAgent::command(), net_id: 3: cmd target _o469 
+node id: 25 
+node X: 97773296 
+node Y: 44261939
+In DSRAgent::command(), net_id: 3: cmd mac-addr 25 
+node id: 25 
+node X: 97773296 
+node Y: 44262039
+In DSRAgent::command(), net_id: 4: cmd add-ll _o480 _o474 
+node id: 25 
+node X: 97773296 
+node Y: 44262146
+In DSRAgent::command(), net_id: 3: cmd install-tap _o473 
+node id: 25 
+node X: 97773296 
+node Y: 44262252
+In DSRAgent::command(), net_id: 3: cmd drop-target _o482 
+node id: 25 
+node X: 97773296 
+node Y: 44262358
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o483 
+node id: 25 
+node X: 97773296 
+node Y: 44262464
+In DSRAgent::command(), net_id: 3: cmd addr 26 
+In DSRAgent::command(), net_id: 3: cmd node _o484 
+node created, node id: 26
+In DSRAgent::command(), net_id: 3: cmd target _o487 
+node id: 26 
+node X: 99987952 
+node Y: 44262690
+In DSRAgent::command(), net_id: 3: cmd mac-addr 26 
+node id: 26 
+node X: 99987952 
+node Y: 44262790
+In DSRAgent::command(), net_id: 4: cmd add-ll _o498 _o492 
+node id: 26 
+node X: 99987952 
+node Y: 44262897
+In DSRAgent::command(), net_id: 3: cmd install-tap _o491 
+node id: 26 
+node X: 99987952 
+node Y: 44263003
+In DSRAgent::command(), net_id: 3: cmd drop-target _o500 
+node id: 26 
+node X: 99987952 
+node Y: 44263109
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o501 
+node id: 26 
+node X: 99987952 
+node Y: 44263215
+In DSRAgent::command(), net_id: 3: cmd addr 27 
+In DSRAgent::command(), net_id: 3: cmd node _o502 
+node created, node id: 27
+In DSRAgent::command(), net_id: 3: cmd target _o505 
+node id: 27 
+node X: 102207520 
+node Y: 44263441
+In DSRAgent::command(), net_id: 3: cmd mac-addr 27 
+node id: 27 
+node X: 102207520 
+node Y: 44263542
+In DSRAgent::command(), net_id: 4: cmd add-ll _o516 _o510 
+node id: 27 
+node X: 102207520 
+node Y: 44259554
+In DSRAgent::command(), net_id: 3: cmd install-tap _o509 
+node id: 27 
+node X: 102207520 
+node Y: 44259661
+In DSRAgent::command(), net_id: 3: cmd drop-target _o518 
+node id: 27 
+node X: 102207520 
+node Y: 44259768
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o519 
+node id: 27 
+node X: 102207520 
+node Y: 44259875
+In DSRAgent::command(), net_id: 3: cmd addr 28 
+In DSRAgent::command(), net_id: 3: cmd node _o520 
+node created, node id: 28
+In DSRAgent::command(), net_id: 3: cmd target _o523 
+node id: 28 
+node X: 104422272 
+node Y: 44260102
+In DSRAgent::command(), net_id: 3: cmd mac-addr 28 
+node id: 28 
+node X: 104422272 
+node Y: 44260203
+In DSRAgent::command(), net_id: 4: cmd add-ll _o534 _o528 
+node id: 28 
+node X: 104422272 
+node Y: 44260311
+In DSRAgent::command(), net_id: 3: cmd install-tap _o527 
+node id: 28 
+node X: 104422272 
+node Y: 44260418
+In DSRAgent::command(), net_id: 3: cmd drop-target _o536 
+node id: 28 
+node X: 104422272 
+node Y: 44260525
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o537 
+node id: 28 
+node X: 104422272 
+node Y: 44260632
+In DSRAgent::command(), net_id: 3: cmd addr 29 
+In DSRAgent::command(), net_id: 3: cmd node _o538 
+node created, node id: 29
+In DSRAgent::command(), net_id: 3: cmd target _o541 
+node id: 29 
+node X: 106641664 
+node Y: 44260859
+In DSRAgent::command(), net_id: 3: cmd mac-addr 29 
+node id: 29 
+node X: 106641664 
+node Y: 44260960
+In DSRAgent::command(), net_id: 4: cmd add-ll _o552 _o546 
+node id: 29 
+node X: 106641664 
+node Y: 44261068
+In DSRAgent::command(), net_id: 3: cmd install-tap _o545 
+node id: 29 
+node X: 106641664 
+node Y: 44261175
+In DSRAgent::command(), net_id: 3: cmd drop-target _o554 
+node id: 29 
+node X: 106641664 
+node Y: 44261282
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o555 
+node id: 29 
+node X: 106641664 
+node Y: 44261389
+In DSRAgent::command(), net_id: 3: cmd addr 30 
+In DSRAgent::command(), net_id: 3: cmd node _o556 
+node created, node id: 30
+In DSRAgent::command(), net_id: 3: cmd target _o559 
+node id: 30 
+node X: 108856320 
+node Y: 44261616
+In DSRAgent::command(), net_id: 3: cmd mac-addr 30 
+node id: 30 
+node X: 108856320 
+node Y: 44261717
+In DSRAgent::command(), net_id: 4: cmd add-ll _o570 _o564 
+node id: 30 
+node X: 108856320 
+node Y: 44261825
+In DSRAgent::command(), net_id: 3: cmd install-tap _o563 
+node id: 30 
+node X: 108856320 
+node Y: 44261932
+In DSRAgent::command(), net_id: 3: cmd drop-target _o572 
+node id: 30 
+node X: 108856320 
+node Y: 44262039
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o573 
+node id: 30 
+node X: 108856320 
+node Y: 44262146
+In DSRAgent::command(), net_id: 3: cmd addr 31 
+In DSRAgent::command(), net_id: 3: cmd node _o574 
+node created, node id: 31
+In DSRAgent::command(), net_id: 3: cmd target _o577 
+node id: 31 
+node X: 111075952 
+node Y: 44262373
+In DSRAgent::command(), net_id: 3: cmd mac-addr 31 
+node id: 31 
+node X: 111075952 
+node Y: 44262474
+In DSRAgent::command(), net_id: 4: cmd add-ll _o588 _o582 
+node id: 31 
+node X: 111075952 
+node Y: 44262582
+In DSRAgent::command(), net_id: 3: cmd install-tap _o581 
+node id: 31 
+node X: 111075952 
+node Y: 44262689
+In DSRAgent::command(), net_id: 3: cmd drop-target _o590 
+node id: 31 
+node X: 111075952 
+node Y: 44262796
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o591 
+node id: 31 
+node X: 111075952 
+node Y: 44262903
+In DSRAgent::command(), net_id: 3: cmd addr 32 
+In DSRAgent::command(), net_id: 3: cmd node _o592 
+node created, node id: 32
+In DSRAgent::command(), net_id: 3: cmd target _o595 
+node id: 32 
+node X: 113290368 
+node Y: 44263130
+In DSRAgent::command(), net_id: 3: cmd mac-addr 32 
+node id: 32 
+node X: 113290368 
+node Y: 44263231
+In DSRAgent::command(), net_id: 4: cmd add-ll _o606 _o600 
+node id: 32 
+node X: 113290368 
+node Y: 44263339
+In DSRAgent::command(), net_id: 3: cmd install-tap _o599 
+node id: 32 
+node X: 113290368 
+node Y: 44263446
+In DSRAgent::command(), net_id: 3: cmd drop-target _o608 
+node id: 32 
+node X: 113290368 
+node Y: 44263553
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o609 
+node id: 32 
+node X: 113290368 
+node Y: 44259564
+In DSRAgent::command(), net_id: 3: cmd addr 33 
+In DSRAgent::command(), net_id: 3: cmd node _o610 
+node created, node id: 33
+In DSRAgent::command(), net_id: 3: cmd target _o613 
+node id: 33 
+node X: 115509680 
+node Y: 44259791
+In DSRAgent::command(), net_id: 3: cmd mac-addr 33 
+node id: 33 
+node X: 115509680 
+node Y: 44259892
+In DSRAgent::command(), net_id: 4: cmd add-ll _o624 _o618 
+node id: 33 
+node X: 115509680 
+node Y: 44260000
+In DSRAgent::command(), net_id: 3: cmd install-tap _o617 
+node id: 33 
+node X: 115509680 
+node Y: 44260107
+In DSRAgent::command(), net_id: 3: cmd drop-target _o626 
+node id: 33 
+node X: 115509680 
+node Y: 44260214
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o627 
+node id: 33 
+node X: 115509680 
+node Y: 44260321
+In DSRAgent::command(), net_id: 3: cmd addr 34 
+In DSRAgent::command(), net_id: 3: cmd node _o628 
+node created, node id: 34
+In DSRAgent::command(), net_id: 3: cmd target _o631 
+node id: 34 
+node X: 117724096 
+node Y: 44260548
+In DSRAgent::command(), net_id: 3: cmd mac-addr 34 
+node id: 34 
+node X: 117724096 
+node Y: 44260649
+In DSRAgent::command(), net_id: 4: cmd add-ll _o642 _o636 
+node id: 34 
+node X: 117724096 
+node Y: 44260757
+In DSRAgent::command(), net_id: 3: cmd install-tap _o635 
+node id: 34 
+node X: 117724096 
+node Y: 44260864
+In DSRAgent::command(), net_id: 3: cmd drop-target _o644 
+node id: 34 
+node X: 117724096 
+node Y: 44260971
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o645 
+node id: 34 
+node X: 117724096 
+node Y: 44261078
+In DSRAgent::command(), net_id: 3: cmd addr 35 
+In DSRAgent::command(), net_id: 3: cmd node _o646 
+node created, node id: 35
+In DSRAgent::command(), net_id: 3: cmd target _o649 
+node id: 35 
+node X: 119943504 
+node Y: 44261305
+In DSRAgent::command(), net_id: 3: cmd mac-addr 35 
+node id: 35 
+node X: 119943504 
+node Y: 44261406
+In DSRAgent::command(), net_id: 4: cmd add-ll _o660 _o654 
+node id: 35 
+node X: 119943504 
+node Y: 44261514
+In DSRAgent::command(), net_id: 3: cmd install-tap _o653 
+node id: 35 
+node X: 119943504 
+node Y: 44261621
+In DSRAgent::command(), net_id: 3: cmd drop-target _o662 
+node id: 35 
+node X: 119943504 
+node Y: 44261728
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o663 
+node id: 35 
+node X: 119943504 
+node Y: 44261835
+In DSRAgent::command(), net_id: 3: cmd addr 36 
+In DSRAgent::command(), net_id: 3: cmd node _o664 
+node created, node id: 36
+In DSRAgent::command(), net_id: 3: cmd target _o667 
+node id: 36 
+node X: 122182496 
+node Y: 44262062
+In DSRAgent::command(), net_id: 3: cmd mac-addr 36 
+node id: 36 
+node X: 122182496 
+node Y: 44262163
+In DSRAgent::command(), net_id: 4: cmd add-ll _o678 _o672 
+node id: 36 
+node X: 122182496 
+node Y: 44262271
+In DSRAgent::command(), net_id: 3: cmd install-tap _o671 
+node id: 36 
+node X: 122182496 
+node Y: 44262378
+In DSRAgent::command(), net_id: 3: cmd drop-target _o680 
+node id: 36 
+node X: 122182496 
+node Y: 44262485
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o681 
+node id: 36 
+node X: 122182496 
+node Y: 44262592
+In DSRAgent::command(), net_id: 3: cmd addr 37 
+In DSRAgent::command(), net_id: 3: cmd node _o682 
+node created, node id: 37
+In DSRAgent::command(), net_id: 3: cmd target _o685 
+node id: 37 
+node X: 124397360 
+node Y: 44262819
+In DSRAgent::command(), net_id: 3: cmd mac-addr 37 
+node id: 37 
+node X: 124397360 
+node Y: 44262920
+In DSRAgent::command(), net_id: 4: cmd add-ll _o696 _o690 
+node id: 37 
+node X: 124397360 
+node Y: 44263028
+In DSRAgent::command(), net_id: 3: cmd install-tap _o689 
+node id: 37 
+node X: 124397360 
+node Y: 44263135
+In DSRAgent::command(), net_id: 3: cmd drop-target _o698 
+node id: 37 
+node X: 124397360 
+node Y: 44263242
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o699 
+node id: 37 
+node X: 124397360 
+node Y: 44263349
+In DSRAgent::command(), net_id: 3: cmd addr 38 
+In DSRAgent::command(), net_id: 3: cmd node _o700 
+node created, node id: 38
+In DSRAgent::command(), net_id: 3: cmd targetsource = 23
+dest(0) = 31
+dest(1) = 14
+dest(2) = 22
+dest(3) = 32
+dest(4) = 31
+dest(5) = 26
+dest(6) = 6
+dest(7) = 16
+dest(8) = 21
+dest(9) = 15
+dest(10) = 0
+dest(11) = 3
+dest(12) = 13
+dest(13) = 27
+dest(14) = 36
+dest(15) = 1
+dest(16) = 14
+dest(17) = 12
+dest(18) = 0
+dest(19) = 13
+Simulation starting
+ _o703 
+node id: 38 
+node X: 126616336 
+node Y: 44259480
+In DSRAgent::command(), net_id: 3: cmd mac-addr 38 
+node id: 38 
+node X: 126616336 
+node Y: 44259581
+In DSRAgent::command(), net_id: 4: cmd add-ll _o714 _o708 
+node id: 38 
+node X: 126616336 
+node Y: 44259689
+In DSRAgent::command(), net_id: 3: cmd install-tap _o707 
+node id: 38 
+node X: 126616336 
+node Y: 44259796
+In DSRAgent::command(), net_id: 3: cmd drop-target _o716 
+node id: 38 
+node X: 126616336 
+node Y: 44259903
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o717 
+node id: 38 
+node X: 126616336 
+node Y: 44260010
+In DSRAgent::command(), net_id: 3: cmd addr 39 
+In DSRAgent::command(), net_id: 3: cmd node _o718 
+node created, node id: 39
+In DSRAgent::command(), net_id: 3: cmd target _o721 
+node id: 39 
+node X: 128831264 
+node Y: 44260237
+In DSRAgent::command(), net_id: 3: cmd mac-addr 39 
+node id: 39 
+node X: 128831264 
+node Y: 44260338
+In DSRAgent::command(), net_id: 4: cmd add-ll _o732 _o726 
+node id: 39 
+node X: 128831264 
+node Y: 44260446
+In DSRAgent::command(), net_id: 3: cmd install-tap _o725 
+node id: 39 
+node X: 128831264 
+node Y: 44260553
+In DSRAgent::command(), net_id: 3: cmd drop-target _o734 
+node id: 39 
+node X: 128831264 
+node Y: 44260660
+In DSRAgent::command(), net_id: 3: cmd tracetarget _o735 
+node id: 39 
+node X: 128831264 
+node Y: 44260767
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 0 
+node X: 44397072 
+node Y: 44260865
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 1 
+node X: 46688544 
+node Y: 44260961
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 2 
+node X: 46778720 
+node Y: 44261057
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 3 
+node X: 48999536 
+node Y: 44261153
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 4 
+node X: 51212528 
+node Y: 44261249
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 5 
+node X: 53430080 
+node Y: 44261345
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 6 
+node X: 55643776 
+node Y: 44261441
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 7 
+node X: 57863040 
+node Y: 44261537
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 8 
+node X: 60077552 
+node Y: 44261633
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 9 
+node X: 62296720 
+node Y: 44261729
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 10 
+node X: 64517232 
+node Y: 44261825
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 11 
+node X: 66738912 
+node Y: 44261922
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 12 
+node X: 68952816 
+node Y: 44262019
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 13 
+node X: 71169328 
+node Y: 44262116
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 14 
+node X: 73388560 
+node Y: 44262213
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 15 
+node X: 75603456 
+node Y: 44262310
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 16 
+node X: 77822448 
+node Y: 44262407
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 17 
+node X: 80037776 
+node Y: 44262504
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 18 
+node X: 82256864 
+node Y: 44262601
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 19 
+node X: 84471376 
+node Y: 44262698
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 20 
+node X: 86690880 
+node Y: 44262795
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 21 
+node X: 88905360 
+node Y: 44262892
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 22 
+node X: 91124480 
+node Y: 44262989
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 23 
+node X: 93339216 
+node Y: 44263086
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 24 
+node X: 95553728 
+node Y: 44263183
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 25 
+node X: 97773296 
+node Y: 44263280
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 26 
+node X: 99987952 
+node Y: 44263377
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 27 
+node X: 102207520 
+node Y: 44263474
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 28 
+node X: 104422272 
+node Y: 44259476
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 29 
+node X: 106641664 
+node Y: 44259574
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 30 
+node X: 108856320 
+node Y: 44259672
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 31 
+node X: 111075952 
+node Y: 44259770
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 32 
+node X: 113290368 
+node Y: 44259868
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 33 
+node X: 115509680 
+node Y: 44259966
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 34 
+node X: 117724096 
+node Y: 44260064
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 35 
+node X: 119943504 
+node Y: 44260162
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 36 
+node X: 122182496 
+node Y: 44260260
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 37 
+node X: 124397360 
+node Y: 44260358
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 38 
+node X: 126616336 
+node Y: 44260456
+In DSRAgent::command(), net_id: 2: cmd startdsr 
+node id: 39 
+node X: 128831264 
+node Y: 44260554
+channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
+highestAntennaZ_ = 1.5,  distCST_ = 550.0
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 0 
+node X: 44397072 
+node Y: 44260746
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 1 
+node X: 46688544 
+node Y: 44260839
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 2 
+node X: 46778720 
+node Y: 44260932
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 3 
+node X: 48999536 
+node Y: 44261025
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 4 
+node X: 51212528 
+node Y: 44261118
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 5 
+node X: 53430080 
+node Y: 44261211
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 6 
+node X: 55643776 
+node Y: 44261304
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 7 
+node X: 57863040 
+node Y: 44261397
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 8 
+node X: 60077552 
+node Y: 44261490
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 9 
+node X: 62296720 
+node Y: 44261583
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 10 
+node X: 64517232 
+node Y: 44261676
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 11 
+node X: 66738912 
+node Y: 44261770
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 12 
+node X: 68952816 
+node Y: 44261864
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 13 
+node X: 71169328 
+node Y: 44261958
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 14 
+node X: 73388560 
+node Y: 44262052
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 15 
+node X: 75603456 
+node Y: 44262146
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 16 
+node X: 77822448 
+node Y: 44262240
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 17 
+node X: 80037776 
+node Y: 44262334
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 18 
+node X: 82256864 
+node Y: 44262428
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 19 
+node X: 84471376 
+node Y: 44262522
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 20 
+node X: 86690880 
+node Y: 44262616
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 21 
+node X: 88905360 
+node Y: 44262710
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 22 
+node X: 91124480 
+node Y: 44262804
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 23 
+node X: 93339216 
+node Y: 44262898
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 24 
+node X: 95553728 
+node Y: 44262992
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 25 
+node X: 97773296 
+node Y: 44263086
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 26 
+node X: 99987952 
+node Y: 44263180
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 27 
+node X: 102207520 
+node Y: 44263274
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 28 
+node X: 104422272 
+node Y: 44263369
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 29 
+node X: 106641664 
+node Y: 44263464
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: Simulation ending
+30 
+node X: 108856320 
+node Y: 44263559
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 31 
+node X: 111075952 
+node Y: 44259558
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 32 
+node X: 113290368 
+node Y: 44259653
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 33 
+node X: 115509680 
+node Y: 44259748
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 34 
+node X: 117724096 
+node Y: 44259843
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 35 
+node X: 119943504 
+node Y: 44259938
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 36 
+node X: 122182496 
+node Y: 44260033
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 37 
+node X: 124397360 
+node Y: 44260128
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 38 
+node X: 126616336 
+node Y: 44260223
+In DSRAgent::command(), net_id: 2: cmd reset 
+node id: 39 
+node X: 128831264 
+node Y: 44260318
