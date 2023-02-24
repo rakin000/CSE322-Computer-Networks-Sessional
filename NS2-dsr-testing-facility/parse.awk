@@ -8,9 +8,22 @@ BEGIN {
     start_time = 1000000;
     end_time = 0;
 
+    initial_energy = 100.0; 
+    total_energy = 0.0;  
+    for(i=0; i<100; i++){ 
+       node_energy[i] = initial_energy; 
+    } 
+ 
+ 
     # constants
-    header_bytes = 8;
+    if ( exp_packet_type == "tcp" ) 
+	header_bytes = 20 ;
+    else header_bytes = 8;
     # print exp_packet_type ;
+
+    print "initial energy :", initial_energy ;
+    print "expected packet type:", exp_packet_type ;
+    print "header bytes: ", header_bytes ; 
 }
 
 
@@ -22,8 +35,9 @@ BEGIN {
     packet_id = $6;
     packet_type = $7;
     packet_bytes = $8;
-
-
+    energy_value = $7 ;
+    node_id=$5;
+    
     sub(/^_*/, "", node);
 	sub(/_*$/, "", node);
     # print "Cleaned Node Name: ",node 
@@ -51,6 +65,11 @@ BEGIN {
     if (packet_type == exp_packet_type && event == "D") {
         dropped_packets += 1;
     }
+
+   
+    if(event =="N"){ 
+       node_energy[node_id] = energy_value;
+    } 
 }
 
 
@@ -62,8 +81,15 @@ END {
     else average_delay = INF ;
     delivery_ratio = (received_packets/sent_packets);
     drop_ratio = (dropped_packets/sent_packets);
-    print "Sent Packets,Dropped Packets,Received Packets,Throughput,Average Delay,Delivery Ratio,Drop Ratio";
-    print  sent_packets, ",", dropped_packets, ",", received_packets, ",", throughput, ",", average_delay, ",", delivery_ratio, ",", drop_ratio ; 
+
+    energy_consumption = 0.0 ;
+    for(i=0; i<100; i++) { 
+        energy_consumption += initial_energy - node_energy[i]; 
+	 # print node_energy[i] ;
+    } 
+
+    print "Sent Packets,Dropped Packets,Received Packets,Throughput,Average Delay,Delivery Ratio,Drop Ratio,Energy Consumption";
+    print  sent_packets, ",", dropped_packets, ",", received_packets, ",", throughput, ",", average_delay, ",", delivery_ratio, ",", drop_ratio, ",", energy_consumption ; 
    # print "Sent Packets: ", sent_packets;
    # print "Dropped Packets: ", dropped_packets;
    # print "Received Packets: ", received_packets;

@@ -75,7 +75,9 @@ $ns node-config -adhocRouting $val(rp) \
                 -agentTrace ON \
                 -routerTrace ON \
                 -macTrace OFF \
-                -movementTrace OFF
+                -movementTrace OFF \
+		-energyModel "EnergyModel" \
+		-initialEnergy 100 
 
 # create nodes
 for {set i 0} {$i < $val(nn) } {incr i} {

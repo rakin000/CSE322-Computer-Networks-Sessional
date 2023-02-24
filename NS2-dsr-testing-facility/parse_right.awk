@@ -33,7 +33,7 @@ BEGIN {
     }
 
 
-    if (layer == "AGT" && packet_type == "tcp") {
+    if (layer == "AGT" && packet_type == exp_packet_type ) {
         
         if(event == "s") {
             sent_time[packet_id] = time_sec;
@@ -47,7 +47,7 @@ BEGIN {
             received_packets += 1;
         }
     }
-    if (packet_type == "tcp" && event == "D") {
+    if (packet_type == exp_packet_type && event == "D") {
         dropped_packets += 1;
     }
 }
@@ -57,8 +57,7 @@ END {
     end_time = time_sec;
     simulation_time = end_time - start_time;
     throughput = (received_bytes*8)/simulation_time; 
-    if( received_packets  ) average_delay = (total_delay/received_packets);
-    else average_delay = INF ;
+    average_delay = (total_delay/received_packets);
     delivery_ratio = (received_packets/sent_packets);
     drop_ratio = (dropped_packets/sent_packets);
     print "Sent Packets,Dropped Packets,Received Packets,Throughput,Average Delay,Delivery Ratio,Drop Ratio";
