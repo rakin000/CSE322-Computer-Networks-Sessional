@@ -17,7 +17,7 @@ runner_func() {
 	do		
 	   # echo -n "ns scenario1.tcl -speed $speedval -execawk 1 >> $filename" >> $filename
 	   echo -n "$speedval, $packetSize," >> $filename
-	   ns scenario1.tcl -speed $speedval -packetSize $packetSize -execawk 1 | tail -n1 >> $filename 
+	   ns scenario.tcl -speed $speedval -packetSize $packetSize -execawk 1 | tail -n1 >> $filename 
 	    #awk -f parse.awk mysim_trace.tr | tail -1 >> $filename      
 	    #awk -v exp_packet_type=udp -f parse.awk mysim_trace.tr | tail -1 >> $filename
 	done 
@@ -27,19 +27,22 @@ runner_func() {
 	do		
 	   # echo -n "ns scenario1.tcl -speed $speedval -execawk 1 >> $filename" >> $filename
 	   echo -n "$speedval, $packetSize," >> $filename
-	   ns scenario1.tcl -speed $speedval -packetSize $packetSize -execawk 1 | tail -n1 >> $filename 
+	   ns scenario.tcl -speed $speedval -packetSize $packetSize -execawk 1 | tail -n1 >> $filename 
 	    #awk -f parse.awk mysim_trace.tr | tail -1 >> $filename      
 	    #awk -v exp_packet_type=udp -f parse.awk mysim_trace.tr | tail -1 >> $filename
 	done 
 }
 
 iteration=10
-
+pref=result
 if [[ $# -ge 1 ]]; then 
 	iteration=$1
-fi 
+fi
+if [[ $# -ge 2 ]]; then 
+	pref=$2
+fi
 
 for ((i=0;i<iteration;i++)) 
 do 
-	runner_func "result${i}.csv"
+	runner_func "${pref}${i}.csv"
 done
